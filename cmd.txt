@@ -1,0 +1,3 @@
+celery -A __project_name__ worker -l info
+celery -A __project_name__ beat -l info
+python3 -m smtpd -n -c DebuggingServer localhost:1025
